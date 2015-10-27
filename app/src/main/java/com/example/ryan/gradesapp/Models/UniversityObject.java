@@ -20,6 +20,7 @@ public class UniversityObject extends EntityModel {
         return url;
     }
 
+    @Override
     public String getName(){
 
         return name;

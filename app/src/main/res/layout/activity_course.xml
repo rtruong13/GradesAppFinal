@@ -18,22 +18,26 @@
         <Spinner
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:id="@+id/courses_spinner"/>
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Course #" />
+            android:hint="Course #"
+            android:id="@+id/courses_edit_text"/>
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Search" />
+            android:text="Search"
+            android:onClick="courseSearch"/>
     </LinearLayout>
 
     <ListView
+        android:id="@+id/coursesListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
